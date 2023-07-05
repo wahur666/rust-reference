@@ -57,12 +57,56 @@ be used as the names of:
 > KW_WHERE          : `where`\
 > KW_WHILE          : `while`
 
+|Keyword|Tested|
+|---|---|
+|as|✔️|
+|break|✔️|
+|const|✔️|
+|continue|✔️|
+|crate||
+|else|✔️|
+|enum|✔️|
+|extern||
+|false||
+|fn|✔️|
+|for|✔️|
+|if|✔️|
+|impl|✔️|
+|in|✔️|
+|let|✔️|
+|loop|✔️|
+|match|✔️|
+|mod|✔️|
+|move|✔️|
+|mut|✔️|
+|pub|✔️|
+|ref|✔️|
+|return|✔️|
+|self||
+|Self||
+|static|✔️|
+|struct|✔️|
+|super||
+|trait|✔️|
+|true||
+|type|✔️|
+|unsafe|✔️|
+|use|✔️|
+|where|✔️|
+|while|✔️|
+
 The following keywords were added beginning in the 2018 edition.
 
 > **<sup>Lexer 2018+</sup>**\
 > KW_ASYNC          : `async`\
 > KW_AWAIT          : `await`\
 > KW_DYN            : `dyn`
+
+|Keyword|Tested|
+|---|---|
+|async||
+|await||
+|dyn||
 
 ## Reserved keywords
 
@@ -85,10 +129,29 @@ them to use these keywords.
 > KW_VIRTUAL        : `virtual`\
 > KW_YIELD          : `yield`
 
+|Keyword|Tested|
+|---|---|
+|abstract|✔️|
+|become||
+|box|✔️|
+|do||
+|final|✔️|
+|macro||
+|override|✔️|
+|priv||
+|typeof|✔️|
+|unsized||
+|virtual||
+|yield||
+
 The following keywords are reserved beginning in the 2018 edition.
 
 > **<sup>Lexer 2018+</sup>**\
 > KW_TRY   : `try`
+
+|Keyword|Tested|
+|---|---|
+|try|✔️|
 
 ## Weak keywords
 
