@@ -41,6 +41,11 @@ A `loop` expression repeats execution of its body continuously:
 A `loop` expression without an associated `break` expression is diverging and has type [`!`](../types/never.md).
 A `loop` expression containing associated [`break` expression(s)](#break-expressions) may terminate, and must have type compatible with the value of the `break` expression(s).
 
+|Test description|Source|
+|---|---|
+|||
+
+
 ## Predicate loops
 
 > **<sup>Syntax</sup>**\
@@ -61,6 +66,14 @@ while i < 10 {
     i = i + 1;
 }
 ```
+
+|Test description|Source|
+|---|---|
+|Break with value|.\tests\ui\loops\loop-break-unsize.rs|
+|Break with value with type|.\tests\ui\loops\loop-break-value.rs <br> .\tests\ui\loops\loop-no-implicit-break.rs <br> .\tests\ui\loops\loop-properly-diverging-2.rs <br> .\tests\ui\loops\dont-suggest-break-thru-item.rs|
+|Loop else not supported|.\tests\ui\loops\loop-else-break-with-value.rs <br> .\tests\ui\loops\loop-else-err.rs <br> .\tests\ui\loops\loop-no-implicit-break.rs  <br> .  \tests\ui\loops\loop-else-let-else-err.rs|
+|Loop control statments effect|.\tests\ui\loops\loop-proper-liveness.rs|
+|||
 
 ## Predicate pattern loops
 
@@ -120,6 +133,10 @@ while let Some(v @ 1) | Some(v @ 2) = vals.pop() {
 ```
 
 As is the case in [`if let` expressions], the scrutinee cannot be a [lazy boolean operator expression][_LazyBooleanOperatorExpression_].
+
+|Test description|Source|
+|---|---|
+|||
 
 ## Iterator loops
 
@@ -186,6 +203,13 @@ The variable names `next`, `iter`, and `val` are for exposition only, they do no
 
 > **Note**: that the outer `match` is used to ensure that any [temporary values] in `iter_expr` don't get dropped before the loop is finished.
 > `next` is declared before being assigned because it results in types being inferred correctly more often.
+
+|Test description|Source|
+|---|---|
+|For Each with panic|.\tests\ui\loops\for-each-loop-panic.rs|
+|Loop takes ownership|.\tests\ui\loops\issue-82916.rs|
+|Cant break with value from for|.\tests\ui\loops\loop-break-value-no-repeat.rs|
+|||
 
 ## Loop labels
 

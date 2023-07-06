@@ -57,43 +57,43 @@ be used as the names of:
 > KW_WHERE          : `where`\
 > KW_WHILE          : `while`
 
-|Keyword|Tested|
-|---|---|
-|as|✔️|
-|break|✔️|
-|const|✔️|
-|continue|✔️|
-|crate||
-|else|✔️|
-|enum|✔️|
-|extern||
-|false||
-|fn|✔️|
-|for|✔️|
-|if|✔️|
-|impl|✔️|
-|in|✔️|
-|let|✔️|
-|loop|✔️|
-|match|✔️|
-|mod|✔️|
-|move|✔️|
-|mut|✔️|
-|pub|✔️|
-|ref|✔️|
-|return|✔️|
-|self||
-|Self||
-|static|✔️|
-|struct|✔️|
-|super||
-|trait|✔️|
-|true||
-|type|✔️|
-|unsafe|✔️|
-|use|✔️|
-|where|✔️|
-|while|✔️|
+|Keyword|Tested|Source|
+|---|---|---|
+|as|✔️|.\tests\ui\parser\keyword-as-as-identifier.rs|
+|break|✔️|.\tests\ui\parser\keyword-break-as-identifier.rs|
+|const|✔️|.\tests\ui\parser\keyword-const-as-identifier.rs|
+|continue|✔️|.\tests\ui\parser\keyword-continue-as-identifier.rs|
+|crate|✔️|.\tests\ui\rfcs\rfc-2126-crate-paths\keyword-crate-as-identifier.rs|
+|else|✔️|.\tests\ui\parser\keyword-else-as-identifier.rs|
+|enum|✔️|.\tests\ui\parser\keyword-enum-as-identifier.rs|
+|extern|✔️|.\tests\ui\keyword\extern\keyword-extern-as-identifier-expr.rs <br> .\tests\ui\keyword\extern\keyword-extern-as-identifier-pat.rs <br> .\tests\ui\keyword\extern\keyword-extern-as-identifier-type.rs <br> .\tests\ui\keyword\extern\keyword-extern-as-identifier-use.rs|
+|false|✔️|.\tests\ui\keyword\keyword-false-as-identifier.rs|
+|fn|✔️|.\tests\ui\parser\keyword-fn-as-identifier.rs|
+|for|✔️|.\tests\ui\parser\keyword-for-as-identifier.rs|
+|if|✔️|.\tests\ui\parser\keyword-if-as-identifier.rs|
+|impl|✔️|.\tests\ui\parser\keyword-impl-as-identifier.rs|
+|in|✔️|.\tests\ui\parser\keyword-in-as-identifier.rs|
+|let|✔️|.\tests\ui\parser\keyword-let-as-identifier.rs|
+|loop|✔️|.\tests\ui\parser\keyword-loop-as-identifier.rs|
+|match|✔️|.\tests\ui\parser\keyword-match-as-identifier.rs|
+|mod|✔️|.\tests\ui\parser\keyword-mod-as-identifier.rs|
+|move|✔️|.\tests\ui\parser\keyword-move-as-identifier.rs|
+|mut|✔️|.\tests\ui\parser\keyword-mut-as-identifier.rs|
+|pub|✔️|.\tests\ui\parser\keyword-pub-as-identifier.rs|
+|ref|✔️|.\tests\ui\parser\keyword-ref-as-identifier.rs|
+|return|✔️|.\tests\ui\parser\keyword-return-as-identifier.rs|
+|self|||
+|Self|✔️|.\tests\ui\keyword\keyword-self-as-identifier.rs|
+|static|✔️|.\tests\ui\parser\keyword-static-as-identifier.rs|
+|struct|✔️|.\tests\ui\parser\keyword-struct-as-identifier.rs|
+|super|✔️|.\tests\ui\keyword\keyword-super-as-identifier.rs|
+|trait|✔️|.\tests\ui\parser\keyword-trait-as-identifier.rs|
+|true|✔️|.\tests\ui\keyword\keyword-true-as-identifier.rs|
+|type|✔️|.\tests\ui\parser\keyword-type-as-identifier.rs|
+|unsafe|✔️|.\tests\ui\parser\keyword-unsafe-as-identifier.rs|
+|use|✔️|.\tests\ui\parser\keyword-use-as-identifier.rs|
+|where|✔️|.\tests\ui\parser\keyword-where-as-identifier.rs|
+|while|✔️|.\tests\ui\parser\keyword-while-as-identifier.rs|
 
 The following keywords were added beginning in the 2018 edition.
 
@@ -102,11 +102,11 @@ The following keywords were added beginning in the 2018 edition.
 > KW_AWAIT          : `await`\
 > KW_DYN            : `dyn`
 
-|Keyword|Tested|
-|---|---|
-|async||
-|await||
-|dyn||
+|Keyword|Tested|Source|
+|---|---|---|
+|async|||
+|await|||
+|dyn|||
 
 ## Reserved keywords
 
@@ -129,29 +129,29 @@ them to use these keywords.
 > KW_VIRTUAL        : `virtual`\
 > KW_YIELD          : `yield`
 
-|Keyword|Tested|
-|---|---|
-|abstract|✔️|
-|become||
-|box|✔️|
-|do||
-|final|✔️|
-|macro||
-|override|✔️|
-|priv||
-|typeof|✔️|
-|unsized||
-|virtual||
-|yield||
+|Keyword|Tested|Source|
+|---|---|---|
+|abstract|✔️|.\tests\ui\parser\keyword-abstract.rs|
+|become|||
+|box|✔️|.\tests\ui\parser\keyword-box-as-identifier.rs|
+|do|||
+|final|✔️|.\tests\ui\parser\keyword-final.rs|
+|macro|||
+|override|✔️|.\tests\ui\parser\keyword-override.rs|
+|priv|||
+|typeof|✔️|.\tests\ui\parser\keyword-typeof.rs|
+|unsized|||
+|virtual|||
+|yield|||
 
 The following keywords are reserved beginning in the 2018 edition.
 
 > **<sup>Lexer 2018+</sup>**\
 > KW_TRY   : `try`
 
-|Keyword|Tested|
-|---|---|
-|try|✔️|
+|Keyword|Tested|Source|
+|---|---|---|
+|try|✔️|.\tests\ui\parser\keyword-try-as-identifier-edition2018.rs|
 
 ## Weak keywords
 
